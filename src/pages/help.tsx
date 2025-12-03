@@ -80,7 +80,7 @@ export default function Help() {
   ]
 
   return (
-    <div className="p-8 bg-background min-h-full">
+    <div className="bg-background min-h-full">
       <div className="max-w-3xl">
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-foreground mb-2 flex items-center gap-2">
@@ -99,7 +99,7 @@ export default function Help() {
               >
                 <h3 className="font-semibold text-foreground text-left">{faq.question}</h3>
                 <ChevronDown
-                  className={`w-5 h-5 text-accent flex-shrink-0 transition-transform ${
+                  className={`w-5 h-5 text-accent shrink-0 transition-transform ${
                     expandedFaq === index ? "transform rotate-180" : ""
                   }`}
                 />
@@ -114,7 +114,6 @@ export default function Help() {
           ))}
         </div>
 
-        {/* Support Section */}
         <div className="mt-8 p-6 border border-border rounded-lg bg-accent/10">
           <h2 className="text-lg font-semibold text-accent mb-2">Need More Help?</h2>
           <p className="text-muted-foreground mb-4">

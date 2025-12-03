@@ -7,7 +7,7 @@ import type { AnalyticsOverview, KPIItem } from "@/types/analytics";
 
 const BASE_API_URL = import.meta.env.VITE_API_BASE_URL || "";
 
-export default function KPICards() {
+export default function CardsSection() {
   const [kpis, setKpis] = useState<KPIItem[]>([]);
   const [loading, setLoading] = useState(true);
 

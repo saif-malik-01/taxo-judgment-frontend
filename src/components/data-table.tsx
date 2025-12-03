@@ -88,7 +88,7 @@ export default function DataTable({
                     </td>
                     <td className="p-4">
                       <Link
-                        to={`/cases/${row.id}`}
+                        to={`/judgments/${row.id}`}
                         className="text-primary font-medium hover:underline"
                       >
                         View →
@@ -101,12 +101,12 @@ export default function DataTable({
           </div>
 
           {page != undefined && (
-            <div className="flex items-center justify-between mt-4">
+            <div className="flex items-center justify-between mt-4 flex-wrap gap-3">
               <p className="text-sm text-muted-foreground">
                 Page {page} of {totalPages}
               </p>
 
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 flex-wrap">
                 <Button
                   variant="outline"
                   disabled={page === 1}
